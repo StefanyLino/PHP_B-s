@@ -36,11 +36,19 @@
         if ($conn->connect_error) {
             die("Falha na conexão: " . $conn->connect_error);
         }
+        // Insere o registro no banco de dados
+        // Insere na tabela clientes os seguintes valores
+        $sql = "INSERT INTO clientes (nome, email) VALUES ('$nome', $email')";
 
+        // confere se a variável 'sql' está correta
 
-        // Digitar PHP + SQL (1º Aqui)
+        if ($conn->query($sql) === TRUE) {
+            // exibe a mensagem
+            echo "<p style='color: green;'>Cliente cadastrado com sucesso!</p>";
+        }
 
-
+        // Encerra a conexão
+        $conn->close();
     }
     ?>
 </body>

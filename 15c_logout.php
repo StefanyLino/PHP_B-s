@@ -5,8 +5,9 @@ session_start();
 // Destrói a sessão do usuário
 session_destroy();
 
-header("Location: 15a_sistema.php")
+header("Location: 15a_sistema.php");
 
 exit();
 
 ?>
+

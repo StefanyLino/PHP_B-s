@@ -25,7 +25,7 @@ if (isset($_GET['id'])){
     if ($conn->query($sql) === TRUE) {
         echo "<p>Cliente excluído com sucesso!</p>";
     } else {
-        echo "<p>Erro ao excluir cliente: " . $conn->error . </p>";
+        echo "<p>Erro ao excluir cliente: " . $conn->error . "</p>";
     }
 }
 

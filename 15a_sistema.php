@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha = $_POST['senha'];
 
     // Verifica se os dados são válidos (usuário: admin, senha: 123)
-    if ($usuario == 'admin' && $senha == '123') {
+    if ($usuario == 'fany' && $senha == '123') {
         $_SESSION['usuario'] = $usuario; // Salva o nome do usuário na sessão
         header("Location: 15b_restrita.php");
         exit();

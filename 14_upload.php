@@ -29,7 +29,7 @@
         }
     }
 
-    $nome_arquivo = basement($_FILES['imagem']['name']);
+    $nome_arquivo = basename($_FILES['imagem']['name']);
     $caminho_completo = $diretorio_destino . $nome_arquivo;
 
         // Move o arquivo enviado para o diretório de destino

@@ -38,7 +38,7 @@
         }
         // Insere o registro no banco de dados
         // Insere na tabela clientes os seguintes valores
-        $sql = "INSERT INTO clientes (nome, email) VALUES ('$nome', $email')";
+        $sql = "INSERT INTO clientes (nome, email) VALUES ('$nome', '$email')";
 
         // confere se a variável 'sql' está correta
 
